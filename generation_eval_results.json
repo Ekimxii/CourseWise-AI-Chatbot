@@ -1,0 +1,1243 @@
+{
+  "generated_at": "2026-05-04T00:00:50.282186",
+  "config": {
+    "n_queries": 25,
+    "judges": [
+      "llama",
+      "claude",
+      "gemma"
+    ],
+    "chatbot_llm": "gpt-4o-mini",
+    "top_k": 3,
+    "reranker_used": true,
+    "ran_baseline": true,
+    "ran_full": true
+  },
+  "results": [
+    {
+      "query_id": "Q01",
+      "category": "Access & Onboarding",
+      "query": "How do I get access to the ATAIN platform?",
+      "reference": "Users typically receive an invitation or welcome email with login credentials. They may also need to complete a Data Use Agreement before accessing the platform.",
+      "baseline_answer": "I'm happy to help! Unfortunately, none of the retrieved answers directly address how to get access to the ATAIN platform. It appears that these responses are related to other topics or offer general support rather than specific instructions for accessing the ATAIN platform. If you're looking for assistance with getting started on the ATAIN platform, I'd be happy to help you find more relevant information.",
+      "baseline_latency_s": 36.248,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.191,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 2,
+          "faithfulness": 3,
+          "reasoning": "The chatbot answer is tangentially related as it discusses the lack of relevant information but does not provide direct guidance on accessing the ATAIN platform, and while it accurately states that the retrieved sources do not answer the question, it lacks specific contacts or mentions from the sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly identifies that the retrieved sources do not contain relevant information about platform access procedures, but this results in a complete failure to answer the user's question, making the response unhelpful despite being faithful to the source limitations."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot refuses to answer the question because the provided sources do not contain the information, which is a faithful assessment of the context but fails to address the user's query."
+        }
+      },
+      "full_answer": "Hi! To access the ATAIN platform, you can follow the link provided in Source 2: \"Here's the link to the preview of the application.\" Note that editorial access is granted by Person_\u00cf, as it's owned by Sova.",
+      "full_latency_s": 21.791,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.733,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 2,
+          "faithfulness": 2,
+          "reasoning": "The chatbot answer is tangentially related as it does not address the access process as outlined in the reference answer and contains unsupported claims about editorial access."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer completely misrepresents the retrieved sources, fabricating a non-existent link and claiming editorial access information that appears nowhere in the provided documents, and fails to address the reference answer about invitation emails and Data Use Agreements."
+        },
+        "gemma": {
+          "relevance": 2,
+          "faithfulness": 1,
+          "reasoning": "The chatbot hallucinates specific text attributed to Source 2 and mentions entities (Person_\u00cf, Sova) that do not exist in the provided context."
+        }
+      }
+    },
+    {
+      "query_id": "Q02",
+      "category": "Access & Onboarding",
+      "query": "What steps are needed to onboard a new institution to CourseWise?",
+      "reference": "Onboarding generally involves signing a Data Use Agreement, completing a supplier registration process, and receiving platform login credentials.",
+      "baseline_answer": "Hi! \n\nUnfortunately, the retrieved answers do not directly address the steps needed to onboard a new institution to CourseWise. These answers appear to be related to setting up individual accounts or resolving login issues. \n\nIf you'd like assistance with onboarding your institution, please let me know and I'll try to help you find the relevant information in our knowledge base or guide you through the process.\n\n(If this is not about CourseWise-related support, I can only help with questions directly related to transfer credit, articulation, or platform support. Otherwise, I'd be happy to help with something else!)",
+      "baseline_latency_s": 28.16,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.151,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 2,
+          "reasoning": "The chatbot answer does not address the question regarding onboarding steps and contains claims that do not directly relate to the sources provided."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot explicitly states it cannot answer the question and does not provide the onboarding steps (Data Use Agreement, supplier registration, platform credentials) from the reference answer, while being appropriately faithful to the retrieved sources which contain no relevant institutional onboarding information."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "..."
+        }
+      },
+      "full_answer": "To onboard a new institution to CourseWise, you should have received an email after submitting your data agreement. If not, our tech team can resend it once they have your contact information. Once you have access, you can upload your data directly to the CourseWise system or email it to us, and we will be happy to upload it for you.",
+      "full_latency_s": 24.824,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.826,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 3,
+          "faithfulness": 3,
+          "reasoning": "The answer partially addresses onboarding steps but focuses more on the process of data submission than the essential steps listed in the reference answer, and it cites processes not explicitly supported by the sources."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 5,
+          "reasoning": "While the chatbot answer is fully supported by the retrieved sources, it focuses narrowly on post-access data upload procedures and email resend processes rather than comprehensively addressing the complete onboarding steps mentioned in the reference answer (Data Use Agreement, supplier registration, credentials issuance)."
+        },
+        "gemma": {
+          "relevance": 3,
+          "faithfulness": 5,
+          "reasoning": "The answer partially addresses the onboarding steps but misses the supplier registration process mentioned in the reference, though it is entirely faithful to the provided sources."
+        }
+      }
+    },
+    {
+      "query_id": "Q03",
+      "category": "Access & Onboarding",
+      "query": "My invitation link to CourseWise has expired. What should I do?",
+      "reference": "Users should contact the CourseWise or ATAIN support team to request a new invitation link or have their account credentials reset.",
+      "baseline_answer": "I'm happy to help! Since your invitation link has expired, please follow these steps:\n\n1. Go to equiv.coursewise.com and click on \"Forgot your password?\"\n2. Send a password reset request to your email\n3. Reset your password and you should be able to use the platform\n\nAs your account has already been set up, please don't make a new account using the website's \"Sign up\" feature. If you encounter any challenges in verifying or setting up your account, feel free to let me know for assistance.",
+      "baseline_latency_s": 24.104,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.461,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 2,
+          "faithfulness": 2,
+          "reasoning": "The answer does not address the need to contact support for a new invitation link, and it suggests a password reset instead, which is unsupported by the provided sources."
+        },
+        "claude": {
+          "relevance": 4,
+          "faithfulness": 3,
+          "reasoning": "The chatbot's answer is mostly relevant as it provides actionable steps that align with the reference answer's suggestion to reset credentials, but the retrieved sources only partially support the specific password reset instructions given, and the answer lacks explicit mention of contacting support as the primary recommendation."
+        },
+        "gemma": {
+          "relevance": 5,
+          "faithfulness": 5,
+          "reasoning": "The chatbot directly addresses the user's problem and provides actionable steps that are explicitly supported by the provided source snippet."
+        }
+      },
+      "full_answer": "Hi!\n\nDon't worry about your invitation link expiring. You can still access CourseWise by resetting your password using the \"Forgot your password?\" feature on equiv.coursewise.com. This should allow you to set up and use the platform without issues. If you encounter any challenges, feel free to let us know.\n\nBest regards!",
+      "full_latency_s": 17.546,
+      "full_retrieved_count": 3,
+      "full_confidence": 1.0,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 4,
+          "faithfulness": 3,
+          "reasoning": "The chatbot answer mostly addresses the question by providing an alternative solution, but it does not directly advise contacting support, and some claims about password resetting are unsupported by the sources."
+        },
+        "claude": {
+          "relevance": 4,
+          "faithfulness": 3,
+          "reasoning": "The chatbot addresses the expired link issue with a password reset solution that is partially supported by Source 1, but diverges from the gold standard recommendation to contact support; the answer is mostly relevant but makes claims about account access that go beyond what the sources explicitly confirm."
+        },
+        "gemma": {
+          "relevance": 5,
+          "faithfulness": 5,
+          "reasoning": "The chatbot directly addresses the user's problem by providing the specific workaround found in Source 1, effectively completing the truncated instructions provided in the text."
+        }
+      }
+    },
+    {
+      "query_id": "Q04",
+      "category": "Access & Onboarding",
+      "query": "I cannot log into the CourseWise platform. How do I resolve this?",
+      "reference": "Common solutions include verifying login credentials, using the password reset feature, clearing browser cache, or contacting the support team for assistance.",
+      "baseline_answer": "Hi there! I'm here to help you with your issue logging into CourseWise. \n\nAccording to our knowledge base, if you're having trouble logging in, you can try resetting your password by going to equiv.coursewise.com and clicking on \"Forgot your password?\". After sending a password reset request to your email, you can reset your password and should be able to use the platform.\n\nPlease note that since your account has already been set up, please do not make a new account using the website's \"Sign up\" feature.",
+      "baseline_latency_s": 24.243,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.109,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 4,
+          "faithfulness": 3,
+          "reasoning": "The answer mostly addresses the login issue with specific steps but lacks some common solutions mentioned in the reference answer and contains some claims that are not fully supported by the sources."
+        },
+        "claude": {
+          "relevance": 4,
+          "faithfulness": 2,
+          "reasoning": "The chatbot addresses the login issue with relevant suggestions (password reset), but the sources are incomplete/corrupted and don't clearly support the specific advice given; additionally, the reference answer mentions multiple solutions (credentials verification, cache clearing, support contact) while the chatbot only focuses on password reset."
+        },
+        "gemma": {
+          "relevance": 5,
+          "faithfulness": 4,
+          "reasoning": "The answer is highly relevant and uses the URL and instruction found in Source 1, though the advice against creating a new account is not explicitly mentioned in the provided sources."
+        }
+      },
+      "full_answer": "Hello! I'm here to help you with your issue. Unfortunately, none of the provided sources explicitly address the issue of logging into the CourseWise platform due to login problems. The sources instead focus on general inquiries about usernames and passwords for an Org_b account.\n\nHowever, it seems that the username and password may have already been created for you or added by someone (Person_). If this is not the case, I recommend reaching out to your designated support contact or contacting CourseWise Support directly for further assistance with resolving your login issue.",
+      "full_latency_s": 20.844,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.623,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 4,
+          "faithfulness": 3,
+          "reasoning": "The response mostly addresses the question of login issues but lacks specific guidance found in the reference answer, and while it provides some suggestions, it also includes unsupported claims about username and password creation."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 4,
+          "reasoning": "The chatbot acknowledges the lack of relevant sources and provides generic troubleshooting advice (contact support), which is tangentially related but fails to address the specific solutions in the reference answer (credential verification, password reset, cache clearing); the faithfulness is moderate because the answer honestly admits source limitations but then offers advice not grounded in the retrieved sources."
+        },
+        "gemma": {
+          "relevance": 3,
+          "faithfulness": 4,
+          "reasoning": "The chatbot correctly identifies that the sources do not contain the answer and suggests contacting support, but it misses the specific technical troubleshooting steps provided in the reference answer and makes slight inferences about the source content."
+        }
+      }
+    },
+    {
+      "query_id": "Q05",
+      "category": "Data Use Agreement",
+      "query": "What is the Data Use Agreement (DUA) for CourseWise?",
+      "reference": "The DUA is a legal agreement that governs how participating institutions share course catalog and articulation data with the CourseWise platform.",
+      "baseline_answer": "According to Answer 3, a Data Use Agreement (DUA) can be submitted through email. If you have already submitted your DUA through DocuSign, it's recommended that you double-check its status with Person_F. If not, you can email the agreement to us and we will review it.",
+      "baseline_latency_s": 23.525,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.142,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 2,
+          "faithfulness": 3,
+          "reasoning": "The chatbot answer is tangentially related to the DUA by discussing submission procedures but does not address what a DUA is, and while some claims are supported by sources, they largely do not fulfill the main question's intent."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 5,
+          "reasoning": "The chatbot answer is highly faithful to the retrieved sources but tangentially addresses the question by providing procedural information about DUA submission rather than explaining what a DUA is or its purpose for CourseWise."
+        },
+        "gemma": {
+          "relevance": 2,
+          "faithfulness": 5,
+          "reasoning": "The chatbot accurately describes the submission process found in the sources but fails to address the question of what the DUA actually is."
+        }
+      },
+      "full_answer": "According to our knowledge sources, the Data Use Agreement (DUA) for CourseWise allows you to upload your data directly to the system or email it to us, and we are happy to upload it for you if needed. You can also submit your DUA through DocuSign.",
+      "full_latency_s": 16.352,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.584,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 2,
+          "faithfulness": 4,
+          "reasoning": "The answer provides information about data submission methods but does not address the legal nature of the DUA, showing a tangential relationship with the question while being mostly supported by the sources."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 4,
+          "reasoning": "The chatbot answer addresses data submission procedures rather than what the DUA actually is or its purpose, missing the core question about the nature of the agreement itself, though the claims made are supported by the retrieved sources."
+        },
+        "gemma": {
+          "relevance": 2,
+          "faithfulness": 3,
+          "reasoning": "The chatbot fails to define the DUA, instead describing data submission processes, and incorrectly attributes the ability to upload data to the DUA itself."
+        }
+      }
+    },
+    {
+      "query_id": "Q06",
+      "category": "Data Use Agreement",
+      "query": "How do I sign the Data Use Agreement using DocuSign?",
+      "reference": "The DUA is distributed via an electronic signature platform. Signatories receive an email with a link and must verify their identity before signing.",
+      "baseline_answer": "I apologize, but none of the retrieved answers directly address how to sign the Data Use Agreement using DocuSign. If you're looking for assistance on this specific topic, I'm afraid I won't be able to provide guidance as it's not present in our knowledge base. Would you like help with something else?",
+      "baseline_latency_s": 15.595,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.24,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer does not address the question about signing the Data Use Agreement using DocuSign and erroneously claims it cannot provide guidance, which is not supported by any of the retrieved sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot refuses to answer the question, which is completely off-topic from providing the requested information, but the refusal itself is faithful since the retrieved sources contain no relevant information about DocuSign or DUA signing procedures."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly identifies that the provided sources lack the necessary information, making its response faithful to the context, but it receives a relevance score of 1 as it refuses to answer the question."
+        }
+      },
+      "full_answer": "To sign your Data Use Agreement using DocuSign, you can submit it through the platform and have Person_F double-check the status of your agreement if needed. Alternatively, you are welcome to email the data use agreement to us instead.",
+      "full_latency_s": 22.024,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.878,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 2,
+          "faithfulness": 2,
+          "reasoning": "The chatbot answer is tangentially related as it mentions using DocuSign but does not explain how to sign the DUA, and it includes unsupported claims about alternative submission methods."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 3,
+          "reasoning": "The chatbot answer fails to address the core question about HOW to sign using DocuSign (missing steps like identity verification and email link), instead offering tangential information about status checks and email alternatives; while the sources mention DocuSign submission, they don't actually contain instructions for the signing process itself, so the answer partially relies on unsupported assumptions about what DocuSign signing entails."
+        },
+        "gemma": {
+          "relevance": 3,
+          "faithfulness": 2,
+          "reasoning": "The chatbot incorrectly conflates 'data submission' with 'signing the DUA' by claiming the agreement can be emailed instead, which is a misinterpretation of the source."
+        }
+      }
+    },
+    {
+      "query_id": "Q07",
+      "category": "Data Use Agreement",
+      "query": "Can the governing law clause in the DUA be changed to our state?",
+      "reference": "The governing law section of the DUA can be left blank or amended based on the institution's legal requirements, subject to review by both parties.",
+      "baseline_answer": "According to the provided answers, we can change the governing law clause in the DUA to your state by using a provision that says \"Governing Law. [This section is intentionally left blank.]\" Your legal team or you can make this change.",
+      "baseline_latency_s": 14.96,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 4,
+          "faithfulness": 4,
+          "reasoning": "The chatbot answer mostly addresses the question about changing the governing law clause, referencing the option to leave it blank or amend it, but introduces the phrase 'intentionally left blank' which is not explicitly cited in the sources."
+        },
+        "claude": {
+          "relevance": 3,
+          "faithfulness": 4,
+          "reasoning": "The chatbot partially addresses the question by explaining one option (leaving the section blank) but fails to fully convey that the section can actually be amended to the user's state, and the sources only provide limited information about the blank provision option rather than comprehensive guidance on changing governing law clauses."
+        },
+        "gemma": {
+          "relevance": 5,
+          "faithfulness": 2,
+          "reasoning": "The answer is highly relevant to the question but fails on faithfulness by claiming that leaving the clause blank is the method used to change it to a specific state, which is a logical error not supported by the source."
+        }
+      },
+      "full_answer": "According to SOURCE 1, it is possible to change the governing law clause in the DUA to your state. It suggests keeping the provision but being silent about it by leaving a blank space: \"Governing Law. [This section is intentionally left blank.]\". Your legal team can make this change or you can send an amended version.",
+      "full_latency_s": 24.736,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.406,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 5,
+          "faithfulness": 4,
+          "reasoning": "The answer directly addresses the question about changing the governing law clause and aligns with the source content, though it introduces additional suggestions that are not directly cited."
+        },
+        "claude": {
+          "relevance": 4,
+          "faithfulness": 3,
+          "reasoning": "The chatbot answer addresses the core question about modifying the governing law clause and cites the correct approach from Source 1, but slightly misrepresents it by framing 'leaving blank' as 'changing to your state' rather than simply making the provision silent, and adds unsupported guidance about sending amended versions."
+        },
+        "gemma": {
+          "relevance": 5,
+          "faithfulness": 3,
+          "reasoning": "The answer is relevant, but it incorrectly attributes the offer to send an amended version to the user instead of the sender and extrapolates that the clause can be changed to 'your state' when the source only suggests leaving it blank."
+        }
+      }
+    },
+    {
+      "query_id": "Q08",
+      "category": "Data Use Agreement",
+      "query": "We need to add redlines to the Data Use Agreement. What is the process?",
+      "reference": "Institutions can submit their redlined version of the DUA back to the CourseWise team, who will review the proposed changes and negotiate as needed.",
+      "baseline_answer": "Unfortunately, none of the retrieved answers directly address the process of adding redlines to the Data Use Agreement in CourseWise. I'm not aware of any existing information that would guide us on this specific topic. If you could provide more context or details about what you mean by \"redlines\" and what you're trying to accomplish, I'd be happy to help further.",
+      "baseline_latency_s": 19.813,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.076,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer does not address the process of adding redlines to the Data Use Agreement and fails to support its claims with any relevant sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot completely failed to answer the question about the redline process despite a clear reference answer existing, though the chatbot's admission of not finding relevant information is technically faithful to its retrieved sources which contained only email acknowledgments without substantive policy information."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "..."
+        }
+      },
+      "full_answer": "To add redlines to the Data Use Agreement, please review and edit Org_M's (Org_N) contract draft, which includes state-mandated language. Once you're satisfied with the changes, you can submit it through DocuSign or email it to us. We're happy to assist in reviewing the agreement and providing any necessary feedback!",
+      "full_latency_s": 25.707,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.63,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 4,
+          "faithfulness": 3,
+          "reasoning": "The answer mostly addresses the process of adding redlines but introduces specifics not supported by the sources, such as using DocuSign, which is mentioned in a tangential way."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 3,
+          "reasoning": "The chatbot answer addresses submission methods (DocuSign/email) which are supported by sources, but fails to address the core question about the negotiation and review process that should happen after submission, making it tangentially related rather than directly answering how to handle redlines; additionally, the answer extrapolates about 'reviewing the agreement and providing feedback' without explicit source support for this step."
+        },
+        "gemma": {
+          "relevance": 5,
+          "faithfulness": 4,
+          "reasoning": "The answer directly addresses the user's question and correctly uses details from the sources, although it slightly conflates the email submission method for data with the DUA submission process."
+        }
+      }
+    },
+    {
+      "query_id": "Q09",
+      "category": "Credit Articulation",
+      "query": "What is credit articulation and how does CourseWise support it?",
+      "reference": "Credit articulation is the process of evaluating how courses at one institution can transfer for credit at another. CourseWise uses AI to help automate and streamline this process across partner institutions.",
+      "baseline_answer": "Credit articulation refers to the process of evaluating and translating credits earned at one institution for use at another institution. This ensures that students' academic work is recognized and applied towards their degree, often simplifying the transfer process. CourseWise supports credit articulation by providing a platform for institutions to share and match course equivalencies, making it easier for students to plan their academic path and achieve their educational goals.",
+      "baseline_latency_s": 26.415,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 5,
+          "faithfulness": 4,
+          "reasoning": "The answer directly addresses credit articulation and CourseWise's role in it, though it extends slightly beyond the provided sources by elaborating on the benefits for students."
+        },
+        "claude": {
+          "relevance": 4,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer directly addresses the question with accurate and helpful information about credit articulation and CourseWise's role, but the retrieved sources contain no relevant information about credit articulation, CourseWise functionality, or course transfer processes, making the answer entirely unsupported by the provided sources."
+        },
+        "gemma": {
+          "relevance": 5,
+          "faithfulness": 1,
+          "reasoning": "While the answer is perfectly relevant to the question and matches the reference answer, it is entirely ungrounded in the provided sources, which only discuss data use agreements and email correspondence."
+        }
+      },
+      "full_answer": "Credit articulation is the process of comparing courses from one institution with those from another to determine if they are equivalent or can be substituted for each other. This helps students transfer credits and ensures that their academic progress is recognized across institutions.\n\nCourseWise supports credit articulation by providing a platform where institutions can upload and manage their course data, enabling efficient comparison and mapping of courses between institutions.",
+      "full_latency_s": 27.204,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.679,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 5,
+          "faithfulness": 3,
+          "reasoning": "The answer directly addresses the concept of credit articulation and how CourseWise supports it, but it contains claims about CourseWise that are not supported by the retrieved sources."
+        },
+        "claude": {
+          "relevance": 3,
+          "faithfulness": 2,
+          "reasoning": "The chatbot provides a reasonable definition of credit articulation that aligns with the reference answer, but the sources provided contain only tangential information about CourseWise's data upload functionality and do not support claims about AI automation, course comparison platforms, or the specific mechanisms of how CourseWise supports articulation."
+        },
+        "gemma": {
+          "relevance": 5,
+          "faithfulness": 4,
+          "reasoning": "The answer is fully relevant to the question, but it relies on external knowledge for the definition and performs minor extrapolation regarding the specific 'mapping' functionality based on the source's mention of data uploading."
+        }
+      }
+    },
+    {
+      "query_id": "Q10",
+      "category": "Credit Articulation",
+      "query": "How does the native articulation approval workflow work?",
+      "reference": "The platform includes a workflow that allows users to create, review, and store course articulation decisions directly within CourseWise, without needing external tools.",
+      "baseline_answer": "I apologize, but none of the provided answers address the question \"How does the native articulation approval workflow work?\" These answers seem to be unrelated to the native articulation approval workflow and instead discuss onboarding resources, data use agreements, and shared folders. If you have a specific question about CourseWise's transfer and articulation support, I'd be happy to help with that!",
+      "baseline_latency_s": 25.241,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer completely fails to address the question about the native articulation approval workflow and its claims about the sources are inaccurate."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot appropriately refused to answer with unsupported information when the retrieved sources (onboarding emails and data access discussions) contained no information about the articulation approval workflow, correctly acknowledging the lack of relevant source material rather than fabricating an answer."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 4,
+          "reasoning": "..."
+        }
+      },
+      "full_answer": "The native articulation approval workflow in CourseWise is not explicitly described in the provided sources. It appears that these sources are mainly composed of updates, requests, and bug reports, rather than documentation on specific workflows or processes. As a result, I cannot provide detailed information on how the native articulation approval workflow works.\n\nIf you would like to know more about this topic, please feel free to ask further questions or request additional resources.",
+      "full_latency_s": 23.217,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.461,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 2,
+          "faithfulness": 3,
+          "reasoning": "The answer is tangentially related as it acknowledges the lack of information on the workflow but does not address the question of how it works, and while it claims to lack data, it does not contradict any sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly identifies that the retrieved sources do not contain information about the native articulation approval workflow, making it unable to answer the question, but this honest admission results in a completely non-responsive answer despite faithfully acknowledging the lack of relevant sources."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot is faithful to the provided sources by correctly identifying that they do not contain the answer, but it fails to address the question or provide the information contained in the reference answer."
+        }
+      }
+    },
+    {
+      "query_id": "Q11",
+      "category": "Credit Articulation",
+      "query": "Can CourseWise handle common course numbering across systems?",
+      "reference": "Yes, CourseWise supports interoperability with common course numbering systems used across higher-education networks to facilitate transfer credit evaluation.",
+      "baseline_answer": "I apologize, but it appears that none of the retrieved answers directly address your question about whether CourseWise handles common course numbering across systems. I'm unable to provide a specific answer based on these sources. If you have further questions or concerns about transfer credit, articulation, or platform support, please feel free to ask!",
+      "baseline_latency_s": 17.603,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer completely ignores the question about CourseWise's handling of common course numbering, and its inability to provide relevant information does not align with the reference answer."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly refused to answer based on unavailable sources (high faithfulness), but completely failed to address the question about common course numbering support (very low relevance)."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot is perfectly faithful by accurately identifying that the sources do not contain the answer, but it receives a low relevance score as it refuses to answer the question."
+        }
+      },
+      "full_answer": "Hi there! I'm happy to help you with your question about CourseWise handling common course numbering across systems. According to Source 2, once you have access to the system, you can upload your data directly or email it to us, and we'll be happy to upload it for you. This suggests that CourseWise is designed to accommodate varying course numbering conventions.",
+      "full_latency_s": 21.099,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.747,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 3,
+          "faithfulness": 3,
+          "reasoning": "The chatbot answer partially addresses the question regarding course numbering but does not explicitly confirm the support for interoperability, and while it relates to the source information, it includes unsupported claims about data uploading."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 2,
+          "reasoning": "The answer fails to address the core question about common course numbering system interoperability, instead making an unsupported inference about data upload capabilities from Source 2, which contains no information about course numbering systems or interoperability."
+        },
+        "gemma": {
+          "relevance": 2,
+          "faithfulness": 2,
+          "reasoning": "The answer is tangentially related because it uses data uploading information to speculate on course numbering, and it is unfaithful because the claim that data upload methods imply numbering interoperability is an unsupported extrapolation."
+        }
+      }
+    },
+    {
+      "query_id": "Q12",
+      "category": "Data Management",
+      "query": "How do I upload a course catalog into CourseWise?",
+      "reference": "Course catalogs can be uploaded through the platform's data upload interface. The support team can help align the data format if needed.",
+      "baseline_answer": "You can upload a course catalog into CourseWise by emailing us your data files, and we will upload them into the system for you.",
+      "baseline_latency_s": 11.072,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.11,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 4,
+          "faithfulness": 3,
+          "reasoning": "The chatbot answer mostly addresses the question about uploading a course catalog but introduces email as a method not mentioned in the reference answer, and while supported by the sources, lacks full alignment with the procedure described in the reference answer."
+        },
+        "claude": {
+          "relevance": 4,
+          "faithfulness": 5,
+          "reasoning": "The chatbot answer directly addresses the question with a practical method (emailing files for upload) that is fully supported by the retrieved sources, though it differs from the reference answer's mention of a self-service upload interface and data format alignment support."
+        },
+        "gemma": {
+          "relevance": 5,
+          "faithfulness": 5,
+          "reasoning": "The answer directly addresses the question and is fully supported by the provided sources, even though it contradicts the reference answer which may rely on information not present in these specific sources."
+        }
+      },
+      "full_answer": "I'm happy to help! Unfortunately, based on the provided sources, it appears that there is no direct guidance on how to upload a course catalog into CourseWise. The responses seem to focus on general inquiries and troubleshooting issues rather than providing step-by-step instructions for uploading a course catalog.\n\nIf you're looking for more information or support, I recommend reaching out to the CourseWise team directly. They may be able to provide more specific guidance or resources to help you with your question.",
+      "full_latency_s": 19.394,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.923,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 2,
+          "faithfulness": 1,
+          "reasoning": "The answer does not directly address the question regarding uploading a course catalog and contains no valid claims supported by the sources provided."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly acknowledges the sources don't contain information about uploading course catalogs and appropriately recommends contacting support, but this fails to address the question since the reference answer demonstrates that relevant information should exist in a properly functioning RAG system."
+        },
+        "gemma": {
+          "relevance": 2,
+          "faithfulness": 5,
+          "reasoning": "The chatbot is highly faithful to the provided sources by correctly noting they lack the necessary information, but it fails to answer the user's question, leading to low relevance."
+        }
+      }
+    },
+    {
+      "query_id": "Q13",
+      "category": "Data Management",
+      "query": "What data format is required for course catalog uploads?",
+      "reference": "CourseWise accepts structured course data, typically in CSV or spreadsheet format. Templates are provided to ensure consistency across institutions.",
+      "baseline_answer": "I'm happy to help! Unfortunately, none of the retrieved answers directly address what data format is required for course catalog uploads. It seems that the previous responses are focused on alternative methods for submitting data (emailing files or having someone review and upload them). Since we don't have any information on the specific data format required, I'll need more context to provide a helpful response. Can you please clarify what type of data you're trying to upload?",
+      "baseline_latency_s": 16.247,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.15,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer does not address the question regarding the data format and contains no accurate claims from the sources provided."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot fails to answer the question about required data formats (CSV/spreadsheet templates per the reference answer) and instead focuses on submission methods found in sources, earning low relevance despite being faithful to the retrieved documents which don't contain format information."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot is perfectly faithful to the provided sources by correctly noting they lack the required information, but it receives a low relevance score because it refuses to answer the specific question asked."
+        }
+      },
+      "full_answer": "According to the provided sources, Course Catalog uploads require data in both xlsx and csv file formats. You are welcome to email your files to us instead of using an upload link.",
+      "full_latency_s": 17.995,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.973,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 4,
+          "faithfulness": 3,
+          "reasoning": "The answer mostly addresses the question regarding data formats but introduces unsupported details about emailing files and mentions 'xlsx' format without a source."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 1,
+          "reasoning": "The chatbot claims specific file formats (xlsx and csv) are required, but the retrieved sources contain no information about file formats whatsoever\u2014they only mention email submission options\u2014making this a hallucinated answer that fails to address the actual question about data format requirements."
+        },
+        "gemma": {
+          "relevance": 5,
+          "faithfulness": 1,
+          "reasoning": "The chatbot directly addresses the question but hallucinates specific file formats (xlsx and csv) that are not contained in the provided sources."
+        }
+      }
+    },
+    {
+      "query_id": "Q14",
+      "category": "Data Management",
+      "query": "I uploaded data but am not seeing it reflected in the platform. What should I check?",
+      "reference": "Verify that the upload completed without errors, confirm the correct institution scope was selected, and contact the support team if the issue continues.",
+      "baseline_answer": "Hi! Unfortunately, none of the retrieved answers directly address your question about uploaded data not being reflected in the platform. However, I can try to help you troubleshoot the issue. Could you please double-check that you have successfully submitted the data and that it has been reviewed by our team? If the problem persists, feel free to provide more details, and we'll do our best to assist you further.",
+      "baseline_latency_s": 17.642,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 3,
+          "faithfulness": 2,
+          "reasoning": "The chatbot answer partially addresses the issue but lacks direct guidance from the sources and introduces unsupported actions regarding the data review process."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 2,
+          "reasoning": "The chatbot fails to provide the specific troubleshooting steps from the reference answer (verify upload completion, confirm institution scope, contact support) and instead offers generic assistance that doesn't align with the sources which indicate data should be emailed to the tech team for manual upload\u2014a detail the chatbot doesn't mention and which would have been the most relevant information to provide."
+        },
+        "gemma": {
+          "relevance": 3,
+          "faithfulness": 4,
+          "reasoning": "The chatbot admits it cannot find a direct answer but provides a helpful suggestion grounded in the sources, although it fails to provide the full checklist found in the reference answer."
+        }
+      },
+      "full_answer": "I've been slow to get back to this, but I'm here to help! In looking through my email, I don't see anything from you to join the platform. I'll let someone else trouble shoot your access to CourseWise and get back to you as soon as possible. Sorry again about the delay!",
+      "full_latency_s": 23.402,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.397,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer is off-topic as it does not address the user's issue regarding data uploads and provides no relevant information or support from the sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot answer is completely off-topic, addressing access issues rather than data upload visibility problems, but it is faithfully grounded in the retrieved sources which appear to be personal email snippets unrelated to the user's actual question."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 2,
+          "reasoning": "The chatbot fails to address the user's technical question and instead provides a conversational reply containing ungrounded claims about checking emails that are not present in the retrieved sources."
+        }
+      }
+    },
+    {
+      "query_id": "Q15",
+      "category": "Contracting",
+      "query": "What information is needed to complete the supplier registration process?",
+      "reference": "Supplier registration typically requires organizational details, authorized signatory information, and a tax identification number or EIN.",
+      "baseline_answer": "Hi! I'm here to help with your supplier registration process. Unfortunately, none of the retrieved answers provide specific information on what's needed to complete this process. If you could provide more details or context about what's required for supplier registration, I'd be happy to try and assist you further.",
+      "baseline_latency_s": 21.442,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer neither addresses the question regarding supplier registration requirements nor is it supported by the retrieved sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot fails to answer the question about supplier registration requirements, though it honestly acknowledges the sources don't contain relevant information rather than hallucinating details."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot fails to answer the question (relevance 1) but is truthful in its assessment that the provided sources do not contain the specific requirements for the supplier registration process (faithfulness 5)."
+        }
+      },
+      "full_answer": "To complete the supplier registration process, please follow these steps:\n\n1. Go to equiv.coursewise.com and click \u201cForgot your password?\u201d.\n2. After sending a password reset request to your email, you can reset your password and should be able to use the platform.\n\nPlease note that your account has already been set up, so do not create a new account using the website's \"Sign up\" feature. If you encounter any challenges while setting up your account or do not receive the welcome email, please let us know.",
+      "full_latency_s": 21.907,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.0,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer is completely off-topic and does not address the question about supplier registration requirements at all."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer completely fails to address the question about supplier registration requirements (organizational details, tax ID, etc.) and instead provides unrelated instructions about password resets and account setup that are not supported by the vague, fragmented sources provided."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot fails to address the question regarding required information and instead provides instructions for a password reset that are not supported by the sources as being the supplier registration process."
+        }
+      }
+    },
+    {
+      "query_id": "Q16",
+      "category": "Contracting",
+      "query": "Who is the authorized signatory for contracts with the CourseWise provider?",
+      "reference": "The COO of the company that operates CourseWise serves as the authorized signatory for platform-related contracts and agreements.",
+      "baseline_answer": "Unfortunately, none of the retrieved answers directly address your question about the authorized signatory for contracts with the CourseWise provider. I'm unable to provide a relevant answer based on the provided context. If you have any further questions or concerns related to CourseWise support, I'll do my best to assist you.",
+      "baseline_latency_s": 14.582,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.001,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer does not address the question regarding the authorized signatory for contracts with CourseWise and contains no supporting information from the retrieved sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot completely fails to answer the question about authorized signatories (scoring 1 for relevance) but appropriately declines to provide an answer when the retrieved sources do not contain relevant information, demonstrating perfect faithfulness by not hallucinating or inventing information (scoring 5 for faithfulness)."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly identifies that the provided sources do not contain the answer, making it faithful to the context, but it fails to answer the question, resulting in a low relevance score based on the provided scale."
+        }
+      },
+      "full_answer": "Hello! The authorized signatory for contracts with CourseWise is Person_F, Chief Operating Officer of Equivalence Systems and Org_o | CourseWise.",
+      "full_latency_s": 14.15,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.798,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 5,
+          "faithfulness": 5,
+          "reasoning": "The chatbot answer directly addresses the question with accurate information and is fully supported by the provided sources."
+        },
+        "claude": {
+          "relevance": 5,
+          "faithfulness": 4,
+          "reasoning": "The chatbot correctly identifies Person_F, the Chief Operating Officer of Equivalence Systems and Org_o | CourseWise, as the authorized signatory, which directly answers the question and aligns with the reference answer's core claim about the COO being the signatory; however, the sources only show Person_F signing a document with an error message rather than explicitly stating their authorization for contracts, creating minor inferential distance from the retrieved content."
+        },
+        "gemma": {
+          "relevance": 5,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly identifies the specific individual and their title from the sources that correspond to the role defined in the reference answer."
+        }
+      }
+    },
+    {
+      "query_id": "Q17",
+      "category": "Contracting",
+      "query": "Can the payment structure in the contract be negotiated?",
+      "reference": "Yes, the fee structure section of the contract can be edited to reflect agreed-upon cost details and payment schedules between the parties.",
+      "baseline_answer": "Unfortunately, the payment structure in the contract cannot be negotiated based on the provided context. It appears that the previous responses were about data submission and contract drafts, which do not address the question of negotiating the payment structure. If you have any further questions or concerns regarding CourseWise-related topics, I'd be happy to help!",
+      "baseline_latency_s": 15.669,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer completely contradicts the reference answer by stating that the payment structure cannot be negotiated, which is untrue according to the context of the question."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot's answer is completely off-topic as it incorrectly claims the payment structure cannot be negotiated, directly contradicting the reference answer and the question's intent, while being faithful to the retrieved sources which contain no information about payment negotiation."
+        },
+        "gemma": {
+          "relevance": 2,
+          "faithfulness": 2,
+          "reasoning": "The chatbot fails to provide the correct affirmative answer from the reference material and instead provides a refusal, which contradicts the gold standard."
+        }
+      },
+      "full_answer": "According to the provided sources, it does not appear that the payment structure in the contract can be negotiated. The sources do not mention any discussion or possibility of renegotiating the terms of the contract. It seems that the existing contract is being reviewed and awaiting a signature from the other party (W-9).",
+      "full_latency_s": 20.933,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.0,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer directly contradicts the reference answer regarding the negotiability of the payment structure and fails to support its claims with the provided sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 2,
+          "reasoning": "The chatbot answer directly contradicts the reference answer by claiming negotiation is not possible, but the retrieved sources contain no information about negotiability either way, making this a case where the chatbot fabricated a negative conclusion not supported by the evidence."
+        },
+        "gemma": {
+          "relevance": 2,
+          "faithfulness": 5,
+          "reasoning": "The chatbot provides an incorrect answer based on the reference standard, but it is highly faithful to the provided sources by accurately stating that the sources do not contain the requested information."
+        }
+      }
+    },
+    {
+      "query_id": "Q18",
+      "category": "AICMP",
+      "query": "What is the AI Credit Mobility Project (AICMP)?",
+      "reference": "AICMP is a collaborative initiative that uses AI to improve transfer credit mobility and course articulation across multiple higher-education systems and institutions.",
+      "baseline_answer": "I apologize, but none of the retrieved answers seem to address your question about AI Credit Mobility Project (AICMP). It appears that these answers are unrelated to the topic you're asking about. I'd be happy to help with any other CourseWise-related questions or topics!",
+      "baseline_latency_s": 12.745,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer does not address the question about AICMP at all and fails to support its claims with any relevant sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly acknowledges that the retrieved sources do not contain information about AICMP and declines to answer, which is faithful to the sources but completely fails to address the user's question about what AICMP is."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly identifies that the provided sources do not contain the answer, so while it refuses to answer the question (relevance 1), its claim about the sources is perfectly faithful (faithfulness 5)."
+        }
+      },
+      "full_answer": "The AI Credit Mobility Project (AICMP) is a project focused on [SOURCE 1 and SOURCE 2]. It seems that AICMP is involved in scheduling meetings, considering time zones, and sharing information with Person_Z at Org_X and Org_Y. Unfortunately, the provided sources do not provide more detailed information about the specific goals or objectives of this project.",
+      "full_latency_s": 17.402,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.83,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 2,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer is tangentially related but does not directly address the main point about AICMP's goals and objectives, and the claims made are not supported by the sources provided."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The answer is completely off-topic, discussing scheduling and time zones rather than addressing what AICMP actually is (an AI initiative for transfer credit mobility), though the chatbot correctly acknowledges its sources don't contain relevant information."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot fails to answer the question and hallucinates specific entities (Person_Z, Org_X, Org_Y) that are not present in the provided sources."
+        }
+      }
+    },
+    {
+      "query_id": "Q19",
+      "category": "AICMP",
+      "query": "Which system office leads are involved in the AICMP project?",
+      "reference": "Multiple state higher-education system offices participate in AICMP, contributing institutional data and collaborating on transfer credit improvement efforts.",
+      "baseline_answer": "Hi! I'm happy to help you with your question. According to the provided answers, it seems that Person_F and Leslie are involved in the AICMP project, as they discuss issues related to this project in their messages.",
+      "baseline_latency_s": 18.863,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 2,
+          "faithfulness": 2,
+          "reasoning": "The chatbot answer is tangentially related to the question by mentioning specific individuals but fails to identify the broader range of system offices involved in the AICMP project, and the claims about Person_F and Leslie are unsupported by the sources provided."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 2,
+          "reasoning": "The chatbot identifies Person_F and Leslie as involved in AICMP based on source mentions, but the sources do not establish these individuals as 'system office leads' nor do they clearly confirm their involvement in the AICMP project itself, making the answer tangentially related and based on unsupported inferences rather than explicit source statements about system office leadership in AICMP."
+        },
+        "gemma": {
+          "relevance": 2,
+          "faithfulness": 1,
+          "reasoning": "The chatbot hallucinates a connection between the mentioned individuals and the AICMP project, as none of the sources mention that project."
+        }
+      },
+      "full_answer": "The AICMP project involves the following system office leads: Person_F and Person_\u0081, who will be serving as co-leads for Location_I.",
+      "full_latency_s": 18.559,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.0,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 4,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer identifies specific individuals involved in the project, which is related to the question but does not provide information consistent with the reference answer about multiple system offices participating, leading to a score of 1 for faithfulness due to lack of support from provided sources."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer names specific individuals as system office leads, but the retrieved sources contain no information about AICMP project leadership, system offices, or the named individuals, and the answer appears to contain hallucinated information not grounded in the provided context."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot provides specific names and locations that are not mentioned in any of the retrieved sources, resulting in a complete hallucination that fails to address the question using the provided context."
+        }
+      }
+    },
+    {
+      "query_id": "Q20",
+      "category": "AICMP",
+      "query": "How often does the AICMP biweekly meeting occur and who attends?",
+      "reference": "AICMP holds biweekly meetings attended by representatives from participating system offices and the CourseWise platform team to coordinate project progress.",
+      "baseline_answer": "Hi! It doesn't seem like the retrieved answers directly address your question about the AICMP biweekly meeting frequency and attendees. I'm not finding any information that specifically answers this question. If you have more context or details, I'd be happy to try and help further. Otherwise, please feel free to share what else I can assist you with!",
+      "baseline_latency_s": 15.08,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer does not provide any relevant information regarding the frequency of AICMP meetings or attendees, and it does not support any claims from the sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly refused to answer because the retrieved sources contain only email fragments about timezone and contact information with no information about AICMP meetings, making the answer irrelevant to the question but completely faithful to the unavailable source material."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot is highly faithful because it correctly identifies that the provided sources contain no information regarding the question, but it receives a low relevance score because it refuses to answer the specific question asked."
+        }
+      },
+      "full_answer": "I apologize, but based on the provided sources, I was unable to find any information about AICMP biweekly meetings or who attends. The conversations in Sources 1 and 2 do not mention meeting frequency or attendees. Source 3 is related to a different product area (ATAIN) and does not provide relevant information.",
+      "full_latency_s": 17.158,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.36,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer does not address the question about the AICMP biweekly meetings at all and inaccurately claims a lack of information despite the reference answer stating otherwise."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly identified that the provided sources contain no information about AICMP meetings, but this results in a complete failure to address the question, and the sources themselves are clearly irrelevant retrieval failures that do not contain the necessary information to answer."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 2,
+          "reasoning": "The chatbot refuses to answer the question as the provided sources lack the information, and it makes an unsupported claim that Source 3 relates to 'ATAIN'."
+        }
+      }
+    },
+    {
+      "query_id": "Q21",
+      "category": "Platform Features",
+      "query": "Is there a feedback mechanism within the CourseWise platform?",
+      "reference": "A formal feedback system is under development. In the meantime, users can submit feedback via a provided form link or by emailing the support team.",
+      "baseline_answer": "Unfortunately, none of the retrieved answers directly address your question about a feedback mechanism within the CourseWise platform. It appears that these responses primarily discuss uploading data or resolving technical issues. I'm unable to provide specific information on a feedback mechanism based on the provided context. If you have any further questions related to CourseWise, transfer credit, articulation, or platform support, I'll do my best to help.",
+      "baseline_latency_s": 15.679,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer does not address the feedback mechanism at all and provides no claims supported by the retrieved sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly refuses to answer based on irrelevant retrieved sources, but this complete refusal to provide the reference answer information makes it unhelpful\u2014the chatbot should have acknowledged that feedback options exist (form link or email support) even if not directly in the retrieved context, or the retrieval system failed to surface relevant documentation."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot is faithful to the sources by correctly noting they do not contain the answer, but it receives a 1 for relevance because it refuses to answer the question."
+        }
+      },
+      "full_answer": "Yes, there is a feedback mechanism within the CourseWise platform. If you encounter any challenges while setting up your account or have ideas or feature requests, please don't hesitate to let us know. We're always looking for ways to improve and appreciate your input!",
+      "full_latency_s": 23.339,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.434,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 4,
+          "faithfulness": 2,
+          "reasoning": "The response mostly addresses the feedback mechanism but does not specify the formal feedback system under development, and the claims about user input are not supported by the provided sources."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer affirms a feedback mechanism exists and invites user input, but the reference answer specifies it's under development with particular submission methods (form link or email), and the retrieved sources contain no information about feedback mechanisms, making the answer tangentially related at best and largely unsupported by available sources."
+        },
+        "gemma": {
+          "relevance": 5,
+          "faithfulness": 1,
+          "reasoning": "The answer is highly relevant to the question but completely fails faithfulness because none of the provided sources contain any information regarding a feedback mechanism."
+        }
+      }
+    },
+    {
+      "query_id": "Q22",
+      "category": "Platform Features",
+      "query": "When will the articulation approval workflow be available?",
+      "reference": "The native articulation approval workflow was planned for rollout in mid-2025, with exact timing dependent on development progress and partner readiness.",
+      "baseline_answer": "Hi!\n\nUnfortunately, neither of the provided answers directly addresses your question about when the articulation approval workflow will be available. If new information becomes available or we receive updates on this topic, we'll be happy to share it with you.\n\nBest regards!",
+      "baseline_latency_s": 18.258,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer does not address the question at all and fails to provide any information from the sources that would relate to the timing of the articulation approval workflow."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot completely failed to answer the question about articulation approval workflow availability, instead providing a generic non-response despite the reference answer clearly stating mid-2025 timing; while the chatbot's admission of insufficient information is faithful to the retrieved sources (which contain no relevant timeline information), it does not address the question at all."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly identifies that the provided sources lack the answer (high faithfulness), but it refuses to provide the information found in the gold standard (low relevance)."
+        }
+      },
+      "full_answer": "We apologize, but we couldn't find any information regarding the articulation approval workflow availability in our provided sources. It appears that this topic is not discussed in the attached emails and requests.\n\nIf you're looking for updates on new features or developments in CourseWise, I recommend checking back with us periodically or reaching out to our support team directly. We'll do our best to keep you informed about any changes or additions to the platform.",
+      "full_latency_s": 22.157,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.669,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer completely fails to address the question about the availability of the articulation approval workflow and does not provide any relevant information from the sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly identifies that the sources do not contain information about articulation approval workflows, making the answer completely irrelevant to the question since the gold standard indicates this information should be available, but the answer provides no information and fails to address the question about when the workflow will be available."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot is faithful to the provided sources by correctly noting the absence of the required information, but it fails to answer the question as required by the reference answer."
+        }
+      }
+    },
+    {
+      "query_id": "Q23",
+      "category": "Platform Features",
+      "query": "How do I access a specific institution's data in CourseWise (e.g. WTAMU)?",
+      "reference": "Users need to be granted institution-level access permissions. Platform administrators can confirm whether access has been enabled for specific campuses.",
+      "baseline_answer": "Unfortunately, none of the retrieved answers directly address how to access a specific institution's data in CourseWise (e.g., WTAMU). As our support assistant, I can only provide information based on the provided context. Since the given answers do not relate to accessing institution data, I won't be able to assist with this question.",
+      "baseline_latency_s": 17.335,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.0,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer completely fails to address the question about accessing specific institution data and does not support any claims with the retrieved sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot refuses to answer the question despite the retrieved sources mentioning 'access' and a tech team, which relate to the core issue; while the refusal is faithful to the limited sources provided, it fails to address the question and misses the opportunity to infer that platform administrators (mentioned implicitly via 'tech team') handle institution-level access permissions."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly identifies that the provided sources do not contain the answer, which constitutes a refusal (relevance 1) but is a truthful assessment of the context (faithfulness 5)."
+        }
+      },
+      "full_answer": "To access WTAMU's data in CourseWise, you can upload their catalog files (as separate CSVs or combined) with differing values in the inst_ipeds column. This will enable you to access and work with their specific institution's data within the platform.",
+      "full_latency_s": 17.391,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.81,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 2,
+          "faithfulness": 2,
+          "reasoning": "The answer is tangentially related as it provides a method for accessing data but fails to mention the need for institution-level access permissions and includes unsupported claims about uploading files."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 3,
+          "reasoning": "The chatbot answer addresses data upload procedures (which is tangentially related) rather than the core question about accessing institution-level data, and while the technical details about inst_ipeds columns are present in sources, the answer misses the reference answer's key point about institution-level access permissions granted by administrators."
+        },
+        "gemma": {
+          "relevance": 4,
+          "faithfulness": 5,
+          "reasoning": "The answer is relevant as it provides a technical method for data differentiation found in the sources, and it is faithful because the specific instructions for uploading CSVs with the inst_ipeds column are directly supported by the retrieved text."
+        }
+      }
+    },
+    {
+      "query_id": "Q24",
+      "category": "ATAIN Community",
+      "query": "What is the ATAIN Knowledge Community and how do I join?",
+      "reference": "The ATAIN Knowledge Community is a peer learning group for member institutions. Invitations to join are typically sent by the community's lead facilitator.",
+      "baseline_answer": "I'm happy to help! However, I must inform you that none of the retrieved answers address your question about joining the ATAIN Knowledge Community or its general information. It appears that these answers are not relevant to your inquiry.\n\nIf you could provide more context or clarify what you mean by \"ATAIN Knowledge Community\", I'll do my best to assist you with CourseWise-related questions.",
+      "baseline_latency_s": 26.818,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.083,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer completely fails to address the question about the ATAIN Knowledge Community and contains no accurate information from the sources provided."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot completely refuses to answer the question despite having access to information, achieving high faithfulness by not hallucinating but resulting in zero relevance to the user's inquiry about ATAIN Knowledge Community."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot is faithful to the provided sources by correctly stating they lack the necessary information, but it receives a low relevance score because it refuses to answer the question."
+        }
+      },
+      "full_answer": "The ATAIN Knowledge Community is an organization focused on transfer pathway analysis and course articulation, as mentioned in SOURCE 1. To join, I recommend reaching out to their technical support inbox ([EMAIL]) for assistance with setting up your account. Once you have access, you can upload your data directly to the CourseWise system or email it to them for uploading.",
+      "full_latency_s": 21.935,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.653,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 3,
+          "faithfulness": 4,
+          "reasoning": "The answer partially addresses the question about the ATAIN Knowledge Community but deviates from the main focus, and while it supports most claims with sources, it also adds unrelated information about course data uploading."
+        },
+        "claude": {
+          "relevance": 2,
+          "faithfulness": 2,
+          "reasoning": "The chatbot answer focuses on technical account setup and data uploading rather than addressing what the ATAIN Knowledge Community is or how to join it as a peer learning group, and it conflates membership access with technical support procedures not clearly supported by the sources provided."
+        },
+        "gemma": {
+          "relevance": 3,
+          "faithfulness": 1,
+          "reasoning": "The chatbot hallucinates a definition and falsely attributes it to Source 1, while also incorrectly interpreting technical support instructions as the process for joining the community."
+        }
+      }
+    },
+    {
+      "query_id": "Q25",
+      "category": "ATAIN Community",
+      "query": "Who leads the ATAIN Knowledge Community sessions?",
+      "reference": "The ATAIN Knowledge Community sessions are led by a designated facilitator who also serves as the project director for the initiative.",
+      "baseline_answer": "I'm afraid none of the retrieved answers directly address who leads the ATAIN Knowledge Community sessions. Unfortunately, I must respectfully inform you that I cannot provide information on this topic as it is not mentioned in the provided context. If you have a question related to CourseWise, transfer credit, articulation, or platform support, I'll be happy to help!",
+      "baseline_latency_s": 18.71,
+      "baseline_retrieved_count": 3,
+      "baseline_confidence": 0.154,
+      "baseline_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer completely fails to address the question about who leads the ATAIN Knowledge Community sessions and does not provide any relevant information supported by the sources."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly refuses to answer because the retrieved sources contain no information about ATAIN Knowledge Community leadership, making the response completely off-topic relative to the question but perfectly faithful to the unavailable sources."
+        },
+        "gemma": {
+          "relevance": 1,
+          "faithfulness": 5,
+          "reasoning": "The chatbot correctly identifies that the provided sources do not contain the answer, which is a faithful assessment of the context, but it is scored low on relevance because it refuses to answer the question."
+        }
+      },
+      "full_answer": "I'm happy to help! According to the provided knowledge sources, it appears that ATAIN's staff leads the Knowledge Community sessions. I'll check in with them and ensure they have your contact info and resend you the email if not. And yes, once you have access, you can upload your data directly to the CourseWise system or email it our way, and we are happy to upload it for you.",
+      "full_latency_s": 23.982,
+      "full_retrieved_count": 3,
+      "full_confidence": 0.719,
+      "full_search_mode": "hybrid+rerank",
+      "full_judges": {
+        "llama": {
+          "relevance": 1,
+          "faithfulness": 1,
+          "reasoning": "The chatbot answer does not address the question about who leads the ATAIN Knowledge Community sessions and contains irrelevant information."
+        },
+        "claude": {
+          "relevance": 1,
+          "faithfulness": 2,
+          "reasoning": "The chatbot answer is completely off-topic, addressing technical access and data upload procedures instead of who leads the ATAIN Knowledge Community sessions, and the vague claim about 'ATAIN's staff' is unsupported by the provided sources which contain only a generic tech support message with no information about ATAIN leadership or Knowledge Community facilitators."
+        },
+        "gemma": {
+          "relevance": 2,
+          "faithfulness": 1,
+          "reasoning": "The chatbot hallucinates that the provided sources contain information about session leaders and includes significant irrelevant text that does not address the question."
+        }
+      }
+    }
+  ]
+}

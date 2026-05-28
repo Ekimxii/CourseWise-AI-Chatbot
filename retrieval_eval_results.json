@@ -1,0 +1,1118 @@
+{
+  "generated_at": "2026-05-04T18:57:48",
+  "summary": {
+    "baseline_recall": 0.44,
+    "baseline_mrr": 0.316,
+    "hybrid_recall": 0.56,
+    "hybrid_mrr": 0.331,
+    "hybrid_rerank_recall": 0.64,
+    "hybrid_rerank_mrr": 0.501,
+    "hybrid_vs_baseline_recall": 0.12,
+    "hybrid_vs_baseline_mrr": 0.015,
+    "reranker_pool5_impact_recall": 0.08,
+    "reranker_pool5_impact_mrr": 0.171,
+    "total_queries": 25,
+    "top_k": 5
+  },
+  "category_breakdown": {
+    "AICMP": {
+      "baseline_recall": 0.333,
+      "baseline_hits": 1,
+      "hybrid_recall": 0.333,
+      "hybrid_hits": 1,
+      "hybrid_rerank_recall": 0.333,
+      "hybrid_rerank_hits": 1,
+      "n_queries": 3
+    },
+    "ATAIN Community": {
+      "baseline_recall": 1.0,
+      "baseline_hits": 2,
+      "hybrid_recall": 1.0,
+      "hybrid_hits": 2,
+      "hybrid_rerank_recall": 1.0,
+      "hybrid_rerank_hits": 2,
+      "n_queries": 2
+    },
+    "Access & Onboarding": {
+      "baseline_recall": 0.5,
+      "baseline_hits": 2,
+      "hybrid_recall": 0.5,
+      "hybrid_hits": 2,
+      "hybrid_rerank_recall": 0.25,
+      "hybrid_rerank_hits": 1,
+      "n_queries": 4
+    },
+    "Contracting": {
+      "baseline_recall": 0.333,
+      "baseline_hits": 1,
+      "hybrid_recall": 0.333,
+      "hybrid_hits": 1,
+      "hybrid_rerank_recall": 0.667,
+      "hybrid_rerank_hits": 2,
+      "n_queries": 3
+    },
+    "Credit Articulation": {
+      "baseline_recall": 0.333,
+      "baseline_hits": 1,
+      "hybrid_recall": 1.0,
+      "hybrid_hits": 3,
+      "hybrid_rerank_recall": 1.0,
+      "hybrid_rerank_hits": 3,
+      "n_queries": 3
+    },
+    "Data Management": {
+      "baseline_recall": 0.667,
+      "baseline_hits": 2,
+      "hybrid_recall": 0.333,
+      "hybrid_hits": 1,
+      "hybrid_rerank_recall": 0.667,
+      "hybrid_rerank_hits": 2,
+      "n_queries": 3
+    },
+    "Data Use Agreement": {
+      "baseline_recall": 0.25,
+      "baseline_hits": 1,
+      "hybrid_recall": 0.75,
+      "hybrid_hits": 3,
+      "hybrid_rerank_recall": 0.5,
+      "hybrid_rerank_hits": 2,
+      "n_queries": 4
+    },
+    "Platform Features": {
+      "baseline_recall": 0.333,
+      "baseline_hits": 1,
+      "hybrid_recall": 0.333,
+      "hybrid_hits": 1,
+      "hybrid_rerank_recall": 1.0,
+      "hybrid_rerank_hits": 3,
+      "n_queries": 3
+    }
+  },
+  "per_query": [
+    {
+      "query_id": "Q01",
+      "category": "Access & Onboarding",
+      "query": "How do I get access to the ATAIN platform?",
+      "ground_truth_qa_id": "qa_0043",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0155",
+          "qa_0154",
+          "qa_0266",
+          "qa_0153",
+          "qa_0355"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0155",
+          "qa_0121",
+          "qa_0154",
+          "qa_0046",
+          "qa_0266"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0341",
+          "qa_0029",
+          "qa_0030",
+          "qa_0161",
+          "qa_0285"
+        ]
+      }
+    },
+    {
+      "query_id": "Q02",
+      "category": "Access & Onboarding",
+      "query": "What steps are needed to onboard a new institution to CourseWise?",
+      "ground_truth_qa_id": "qa_0028",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0341",
+          "qa_0029",
+          "qa_0160",
+          "qa_0284",
+          "qa_0206"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0206",
+          "qa_0031",
+          "qa_0162",
+          "qa_0286",
+          "qa_0343"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0206",
+          "qa_0152",
+          "qa_0031",
+          "qa_0162",
+          "qa_0286"
+        ]
+      }
+    },
+    {
+      "query_id": "Q03",
+      "category": "Access & Onboarding",
+      "query": "My invitation link to CourseWise has expired. What should I do?",
+      "ground_truth_qa_id": "qa_0115",
+      "baseline": {
+        "hit": true,
+        "rank": 1,
+        "retrieved_ids": [
+          "qa_0115",
+          "qa_0037",
+          "qa_0292",
+          "qa_0168",
+          "qa_0349"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 4,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0037",
+          "qa_0292",
+          "qa_0168",
+          "qa_0115",
+          "qa_0349"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0115",
+          "qa_0037",
+          "qa_0292",
+          "qa_0168",
+          "qa_0349"
+        ]
+      }
+    },
+    {
+      "query_id": "Q04",
+      "category": "Access & Onboarding",
+      "query": "I cannot log into the CourseWise platform. How do I resolve this?",
+      "ground_truth_qa_id": "qa_0115",
+      "baseline": {
+        "hit": true,
+        "rank": 2,
+        "retrieved_ids": [
+          "qa_0206",
+          "qa_0115",
+          "qa_0048",
+          "qa_0303",
+          "qa_0179"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 3,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0206",
+          "qa_0043",
+          "qa_0115",
+          "qa_0174",
+          "qa_0048"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0045",
+          "qa_0176",
+          "qa_0300",
+          "qa_0357",
+          "qa_0206"
+        ]
+      }
+    },
+    {
+      "query_id": "Q05",
+      "category": "Data Use Agreement",
+      "query": "What is the Data Use Agreement (DUA) for CourseWise?",
+      "ground_truth_qa_id": "qa_0072",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0082",
+          "qa_0230",
+          "qa_0108",
+          "qa_0338",
+          "qa_0081"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 5,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0108",
+          "qa_0338",
+          "qa_0082",
+          "qa_0230",
+          "qa_0072"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 2,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0075",
+          "qa_0072",
+          "qa_0200",
+          "qa_0062",
+          "qa_0141"
+        ]
+      }
+    },
+    {
+      "query_id": "Q06",
+      "category": "Data Use Agreement",
+      "query": "How do I sign the Data Use Agreement using DocuSign?",
+      "ground_truth_qa_id": "qa_0073",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0082",
+          "qa_0230",
+          "qa_0085",
+          "qa_0233",
+          "qa_0235"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 3,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0082",
+          "qa_0230",
+          "qa_0073",
+          "qa_0201",
+          "qa_0008"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0089",
+          "qa_0237",
+          "qa_0087",
+          "qa_0235",
+          "qa_0083"
+        ]
+      }
+    },
+    {
+      "query_id": "Q07",
+      "category": "Data Use Agreement",
+      "query": "Can the governing law clause in the DUA be changed to our state?",
+      "ground_truth_qa_id": "qa_0008",
+      "baseline": {
+        "hit": true,
+        "rank": 1,
+        "retrieved_ids": [
+          "qa_0008",
+          "qa_0381",
+          "qa_0326",
+          "qa_0051",
+          "qa_0382"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0008",
+          "qa_0381",
+          "qa_0198",
+          "qa_0326",
+          "qa_0015"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0008",
+          "qa_0326",
+          "qa_0051",
+          "qa_0087",
+          "qa_0235"
+        ]
+      }
+    },
+    {
+      "query_id": "Q08",
+      "category": "Data Use Agreement",
+      "query": "We need to add redlines to the Data Use Agreement. What is the process?",
+      "ground_truth_qa_id": "qa_0108",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0082",
+          "qa_0230",
+          "qa_0329",
+          "qa_0078",
+          "qa_0338"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0082",
+          "qa_0230",
+          "qa_0075",
+          "qa_0117",
+          "qa_0072"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0072",
+          "qa_0200",
+          "qa_0006",
+          "qa_0075",
+          "qa_0083"
+        ]
+      }
+    },
+    {
+      "query_id": "Q09",
+      "category": "Credit Articulation",
+      "query": "What is credit articulation and how does CourseWise support it?",
+      "ground_truth_qa_id": "qa_0218",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0121",
+          "qa_0080",
+          "qa_0228",
+          "qa_0341",
+          "qa_0029"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 4,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0080",
+          "qa_0228",
+          "qa_0121",
+          "qa_0218",
+          "qa_0341"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 2,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0152",
+          "qa_0218",
+          "qa_0341",
+          "qa_0029",
+          "qa_0160"
+        ]
+      }
+    },
+    {
+      "query_id": "Q10",
+      "category": "Credit Articulation",
+      "query": "How does the native articulation approval workflow work?",
+      "ground_truth_qa_id": "qa_0014",
+      "baseline": {
+        "hit": true,
+        "rank": 1,
+        "retrieved_ids": [
+          "qa_0014",
+          "qa_0129",
+          "qa_0082",
+          "qa_0230",
+          "qa_0075"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0014",
+          "qa_0129",
+          "qa_0041",
+          "qa_0172",
+          "qa_0296"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0014",
+          "qa_0129",
+          "qa_0152",
+          "qa_0080",
+          "qa_0228"
+        ]
+      }
+    },
+    {
+      "query_id": "Q11",
+      "category": "Credit Articulation",
+      "query": "Can CourseWise handle common course numbering across systems?",
+      "ground_truth_qa_id": "qa_0000",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0341",
+          "qa_0029",
+          "qa_0160",
+          "qa_0284",
+          "qa_0189"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 2,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0341",
+          "qa_0000",
+          "qa_0029",
+          "qa_0013",
+          "qa_0160"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0000",
+          "qa_0189",
+          "qa_0341",
+          "qa_0029",
+          "qa_0160"
+        ]
+      }
+    },
+    {
+      "query_id": "Q12",
+      "category": "Data Management",
+      "query": "How do I upload a course catalog into CourseWise?",
+      "ground_truth_qa_id": "qa_0225",
+      "baseline": {
+        "hit": true,
+        "rank": 5,
+        "retrieved_ids": [
+          "qa_0029",
+          "qa_0160",
+          "qa_0284",
+          "qa_0341",
+          "qa_0225"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0225",
+          "qa_0029",
+          "qa_0121",
+          "qa_0160",
+          "qa_0013"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0225",
+          "qa_0353",
+          "qa_0041",
+          "qa_0172",
+          "qa_0296"
+        ]
+      }
+    },
+    {
+      "query_id": "Q13",
+      "category": "Data Management",
+      "query": "What data format is required for course catalog uploads?",
+      "ground_truth_qa_id": "qa_0316",
+      "baseline": {
+        "hit": true,
+        "rank": 5,
+        "retrieved_ids": [
+          "qa_0225",
+          "qa_0088",
+          "qa_0236",
+          "qa_0111",
+          "qa_0316"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0088",
+          "qa_0236",
+          "qa_0072",
+          "qa_0225",
+          "qa_0013"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 5,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0088",
+          "qa_0236",
+          "qa_0075",
+          "qa_0111",
+          "qa_0316"
+        ]
+      }
+    },
+    {
+      "query_id": "Q14",
+      "category": "Data Management",
+      "query": "I uploaded data but am not seeing it reflected in the platform. What should I check?",
+      "ground_truth_qa_id": "qa_0272",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0083",
+          "qa_0231",
+          "qa_0225",
+          "qa_0171",
+          "qa_0295"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0110",
+          "qa_0315",
+          "qa_0083",
+          "qa_0271",
+          "qa_0231"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0084",
+          "qa_0232",
+          "qa_0083",
+          "qa_0231",
+          "qa_0081"
+        ]
+      }
+    },
+    {
+      "query_id": "Q15",
+      "category": "Contracting",
+      "query": "What information is needed to complete the supplier registration process?",
+      "ground_truth_qa_id": "qa_0006",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0075",
+          "qa_0141",
+          "qa_0062",
+          "qa_0140",
+          "qa_0061"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0141",
+          "qa_0062",
+          "qa_0082",
+          "qa_0230",
+          "qa_0140"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0141",
+          "qa_0062",
+          "qa_0206",
+          "qa_0120",
+          "qa_0082"
+        ]
+      }
+    },
+    {
+      "query_id": "Q16",
+      "category": "Contracting",
+      "query": "Who is the authorized signatory for contracts with the CourseWise provider?",
+      "ground_truth_qa_id": "qa_0024",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0341",
+          "qa_0029",
+          "qa_0160",
+          "qa_0284",
+          "qa_0335"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0335",
+          "qa_0023",
+          "qa_0029",
+          "qa_0160",
+          "qa_0341"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 3,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0025",
+          "qa_0337",
+          "qa_0024",
+          "qa_0336",
+          "qa_0325"
+        ]
+      }
+    },
+    {
+      "query_id": "Q17",
+      "category": "Contracting",
+      "query": "Can the payment structure in the contract be negotiated?",
+      "ground_truth_qa_id": "qa_0006",
+      "baseline": {
+        "hit": true,
+        "rank": 1,
+        "retrieved_ids": [
+          "qa_0006",
+          "qa_0073",
+          "qa_0201",
+          "qa_0087",
+          "qa_0235"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0006",
+          "qa_0009",
+          "qa_0374",
+          "qa_0073",
+          "qa_0107"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 2,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0009",
+          "qa_0006",
+          "qa_0087",
+          "qa_0235",
+          "qa_0374"
+        ]
+      }
+    },
+    {
+      "query_id": "Q18",
+      "category": "AICMP",
+      "query": "What is the AI Credit Mobility Project (AICMP)?",
+      "ground_truth_qa_id": "qa_0370",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0010",
+          "qa_0011",
+          "qa_0014",
+          "qa_0129",
+          "qa_0380"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0010",
+          "qa_0011",
+          "qa_0014",
+          "qa_0080",
+          "qa_0129"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0010",
+          "qa_0012",
+          "qa_0011",
+          "qa_0385",
+          "qa_0014"
+        ]
+      }
+    },
+    {
+      "query_id": "Q19",
+      "category": "AICMP",
+      "query": "Which system office leads are involved in the AICMP project?",
+      "ground_truth_qa_id": "qa_0010",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0014",
+          "qa_0129",
+          "qa_0383",
+          "qa_0341",
+          "qa_0029"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0014",
+          "qa_0218",
+          "qa_0129",
+          "qa_0151",
+          "qa_0383"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0385",
+          "qa_0036",
+          "qa_0167",
+          "qa_0291",
+          "qa_0348"
+        ]
+      }
+    },
+    {
+      "query_id": "Q20",
+      "category": "AICMP",
+      "query": "How often does the AICMP biweekly meeting occur and who attends?",
+      "ground_truth_qa_id": "qa_0011",
+      "baseline": {
+        "hit": true,
+        "rank": 2,
+        "retrieved_ids": [
+          "qa_0000",
+          "qa_0011",
+          "qa_0133",
+          "qa_0109",
+          "qa_0027"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0011",
+          "qa_0000",
+          "qa_0107",
+          "qa_0133",
+          "qa_0270"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0011",
+          "qa_0012",
+          "qa_0000",
+          "qa_0211",
+          "qa_0109"
+        ]
+      }
+    },
+    {
+      "query_id": "Q21",
+      "category": "Platform Features",
+      "query": "Is there a feedback mechanism within the CourseWise platform?",
+      "ground_truth_qa_id": "qa_0014",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0029",
+          "qa_0160",
+          "qa_0284",
+          "qa_0341",
+          "qa_0303"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0029",
+          "qa_0274",
+          "qa_0160",
+          "qa_0046",
+          "qa_0284"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0014",
+          "qa_0129",
+          "qa_0029",
+          "qa_0160",
+          "qa_0284"
+        ]
+      }
+    },
+    {
+      "query_id": "Q22",
+      "category": "Platform Features",
+      "query": "When will the articulation approval workflow be available?",
+      "ground_truth_qa_id": "qa_0014",
+      "baseline": {
+        "hit": true,
+        "rank": 2,
+        "retrieved_ids": [
+          "qa_0075",
+          "qa_0014",
+          "qa_0129",
+          "qa_0218",
+          "qa_0233"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0014",
+          "qa_0129",
+          "qa_0075",
+          "qa_0152",
+          "qa_0218"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 2,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0152",
+          "qa_0014",
+          "qa_0129",
+          "qa_0075",
+          "qa_0080"
+        ]
+      }
+    },
+    {
+      "query_id": "Q23",
+      "category": "Platform Features",
+      "query": "How do I access a specific institution's data in CourseWise?",
+      "ground_truth_qa_id": "qa_0150",
+      "baseline": {
+        "hit": false,
+        "rank": null,
+        "retrieved_ids": [
+          "qa_0343",
+          "qa_0031",
+          "qa_0286",
+          "qa_0162",
+          "qa_0072"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "rank": null,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0031",
+          "qa_0343",
+          "qa_0286",
+          "qa_0162",
+          "qa_0029"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0150",
+          "qa_0151",
+          "qa_0029",
+          "qa_0160",
+          "qa_0284"
+        ]
+      }
+    },
+    {
+      "query_id": "Q24",
+      "category": "ATAIN Community",
+      "query": "What is the ATAIN Knowledge Community and how do I join?",
+      "ground_truth_qa_id": "qa_0014",
+      "baseline": {
+        "hit": true,
+        "rank": 1,
+        "retrieved_ids": [
+          "qa_0014",
+          "qa_0129",
+          "qa_0048",
+          "qa_0303",
+          "qa_0179"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 5,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0029",
+          "qa_0341",
+          "qa_0160",
+          "qa_0284",
+          "qa_0014"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0014",
+          "qa_0129",
+          "qa_0152",
+          "qa_0030",
+          "qa_0161"
+        ]
+      }
+    },
+    {
+      "query_id": "Q25",
+      "category": "ATAIN Community",
+      "query": "Who leads the ATAIN Knowledge Community sessions?",
+      "ground_truth_qa_id": "qa_0014",
+      "baseline": {
+        "hit": true,
+        "rank": 1,
+        "retrieved_ids": [
+          "qa_0014",
+          "qa_0129",
+          "qa_0341",
+          "qa_0029",
+          "qa_0160"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "rank": 5,
+        "search_mode": "vector+BM25+RRF (no reranker)",
+        "retrieved_ids": [
+          "qa_0029",
+          "qa_0160",
+          "qa_0341",
+          "qa_0284",
+          "qa_0014"
+        ]
+      },
+      "hybrid_rerank_constrained": {
+        "hit": true,
+        "rank": 1,
+        "search_mode": "vector+BM25+RRF+rerank(pool_size=5)",
+        "retrieved_ids": [
+          "qa_0014",
+          "qa_0129",
+          "qa_0152",
+          "qa_0030",
+          "qa_0161"
+        ]
+      }
+    }
+  ]
+}
